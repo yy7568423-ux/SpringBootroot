@@ -13,11 +13,21 @@
         <module name="SpringBootone" />
         <module name="SpringBoot-profiles" />
       </profile>
+      <profile name="Annotation profile for SpringBoot-mybatis" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../dev/repostiry/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+        </processorPath>
+        <module name="SpringBoot-mybatis" />
+      </profile>
       <profile name="Annotation profile for SpringBoot-redis" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../dev/repostiry/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
           <entry name="$PROJECT_DIR$/../../../dev/repostiry/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
         <module name="SpringBoot-redis" />
@@ -28,6 +38,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringBoot-Test" options="-parameters" />
       <module name="SpringBoot-config" options="-parameters" />
+      <module name="SpringBoot-mybatis" options="-parameters" />
       <module name="SpringBoot-profiles" options="-parameters" />
       <module name="SpringBoot-redis" options="-parameters" />
       <module name="SpringBootDemo" options="-parameters" />
