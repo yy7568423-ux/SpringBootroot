@@ -1,0 +1,27 @@
+# 全局公共配置（所有环境都生效）
+server:
+  port: 8080
+
+# 开发环境配置
+---
+spring:
+  config:
+    activate:
+      on-profile: dev # 替代原来的 spring.profiles: dev
+server:
+  port: 8081
+msg: 这是开发环境
+
+# 生产环境配置
+---
+spring:
+  config:
+    activate:
+      on-profile: prod # 替代原来的 spring.profiles: prod
+server:
+  port: 8082
+msg: 这是生产环境
+---
+spring:
+  profiles:
+    active: dev
