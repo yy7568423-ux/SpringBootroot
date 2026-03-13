@@ -1,0 +1,18 @@
+## 应用基础配置
+#spring:
+#  application:
+#    name: SpringBoot-redis
+#  # Redis 核心配置（Spring Boot 4.x 新写法）
+#  data:
+#    redis:
+#      host: 127.0.0.1    # Redis 地址（本地 Docker 容器）
+#      port: 6379         # 端口（和 Docker 映射一致）
+#      # 无密码时注释/删除 password 项
+#      # password: 123456
+#      # Lettuce 连接池配置（可选，提升性能）
+#      lettuce:
+#        pool:
+#          max-active: 8   # 最大连接数
+#          max-idle: 8     # 最大空闲连接
+#          min-idle: 0     # 最小空闲连接
+#        shutdown-timeout: 100ms  # 关闭超时时间
